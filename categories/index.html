@@ -30,7 +30,7 @@
     "name": "muxinx"
   },
   "dateModified": "2017-11-11T16:30:37\x2b08:00",
-  "keywords": "日记,随笔,日记,随笔,",
+  "keywords": "数据库,日记,计算机,随笔,mysql,数据库,日记,随笔,",
   "description": "A simple blog site for technology and life."
 }
 </script>
@@ -231,6 +231,30 @@
 
 
 
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://xumjbn.github.io/1/01/"></a></h2>
+    <p class="blog-post-meta"><time datetime="0001-01-01T00:00:00Z">Mon Jan 01, 0001</time> by muxinx in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA" rel="category tag">计算机</a>, <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93" rel="category tag">数据库</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93" rel="tag">数据库</a>, <a href="/tags/mysql" rel="tag">mysql</a>
+
+</p>
+  </header>
+   mysql字符切换 背景 mysql默认字符集为latin1，一般为了兼容中文字符集都会使用utf8，三个字节的 UTF-8 最大能编码的Unicode字符是0xffff，也就是也就是说，任何不在基本多文本平面(BMP)的Unicode字符，都无法使用Mysql的utf8字符集存储。包括Emoji表情(Emoji是一种特殊的unicode编码，常见于ios和android手机上)，和很多不常用的汉字，以及任何新增的unicode字符如果遇到4字节的宽字符就会插入异常了。更进一步，为了兼容unicode编码，用uft8mb4，5.5.3版本后才支持(查看版本 select version())。
+修改整个数据库字符集 注意：如果数据不重要的话，可以直接使用更改数据库的编码格式，再重新建表即可。
+alter database test character set utf8  修改某张表字符集 可以在数据存在的情况下直接更改，但是之前显示乱码的字符还是是显示乱码，新插入数据正常
+alter table students convert to character set utf8  修改某个字段字符集 注意：第一个sanme是要给表中的sname字段修改编码格式。 第二个sname varchar(64)是要修改的字段名和字段类型（一般和原表中一样，不会做修改） not null是修改sname不能为空的。(可以选择不加)
+alter table students change sname sname varchar(64) character set utf8 not null;  
+  <a href='https://xumjbn.github.io/1/01/'>Read more →</a>
+</article> 
+
+
+
+
+
+
 
 
         </div> <!-- /.blog-main -->
@@ -262,6 +286,8 @@
 <li><a href="/2016/12/2016-12-25/">2016-12-25</a></li>
 
 <li><a href="/2016/10/2016-10-05/">2016-10-05</a></li>
+
+<li><a href="/1/01/"></a></li>
 
     </ol>
   </section>

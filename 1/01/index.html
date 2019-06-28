@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="" />
+<meta property="og:description" content=" mysql字符切换 背景 mysql默认字符集为latin1，一般为了兼容中文字符集都会使用utf8，三个字节的 UTF-8 最大能编码的Unicode字符是0xffff，也就是也就是说，任何不在基本多文本平面(BMP)的Unicode字符，都无法使用Mysql的utf8字符集存储。包括Emoji表情(Emoji是一种特殊的unicode编码，常见于ios和android手机上)，和很多不常用的汉字，以及任何新增的unicode字符如果遇到4字节的宽字符就会插入异常了。更进一步，为了兼容unicode编码，用uft8mb4，5.5.3版本后才支持(查看版本 select version())。
+修改整个数据库字符集 注意：如果数据不重要的话，可以直接使用更改数据库的编码格式，再重新建表即可。
+alter database test character set utf8  修改某张表字符集 可以在数据存在的情况下直接更改，但是之前显示乱码的字符还是是显示乱码，新插入数据正常
+alter table students convert to character set utf8  修改某个字段字符集 注意：第一个sanme是要给表中的sname字段修改编码格式。 第二个sname varchar(64)是要修改的字段名和字段类型（一般和原表中一样，不会做修改） not null是修改sname不能为空的。(可以选择不加)
+alter table students change sname sname varchar(64) character set utf8 not null;  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xumjbn.github.io/1/01/" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=" mysql字符切换 背景 mysql默认字符集为latin1，一般为了兼容中文字符集都会使用utf8，三个字节的 UTF-8 最大能编码的Unicode字符是0xffff，也就是也就是说，任何不在基本多文本平面(BMP)的Unicode字符，都无法使用Mysql的utf8字符集存储。包括Emoji表情(Emoji是一种特殊的unicode编码，常见于ios和android手机上)，和很多不常用的汉字，以及任何新增的unicode字符如果遇到4字节的宽字符就会插入异常了。更进一步，为了兼容unicode编码，用uft8mb4，5.5.3版本后才支持(查看版本 select version())。
+修改整个数据库字符集 注意：如果数据不重要的话，可以直接使用更改数据库的编码格式，再重新建表即可。
+alter database test character set utf8  修改某张表字符集 可以在数据存在的情况下直接更改，但是之前显示乱码的字符还是是显示乱码，新插入数据正常
+alter table students convert to character set utf8  修改某个字段字符集 注意：第一个sanme是要给表中的sname字段修改编码格式。 第二个sname varchar(64)是要修改的字段名和字段类型（一般和原表中一样，不会做修改） not null是修改sname不能为空的。(可以选择不加)
+alter table students change sname sname varchar(64) character set utf8 not null;  "/>
+<meta name="generator" content="Hugo 0.55.6" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "url": "https:\/\/xumjbn.github.io\/1\/01\/",
+  "wordCount": "43",
+  "datePublished": "0001-01-01T00:00:00\x2b00:00",
+  "author": {
+    "@type": "Person",
+    "name": "muxinx"
+  },
+  "keywords": "计算机, 数据库, mysql"
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://xumjbn.github.io/1/01/">
+
+    <title> | MUXINX</title>
+
+    
+    <!-- combined, minified CSS -->
+    <link href="https://xumjbn.github.io/css/style.css" rel="stylesheet" integrity="sha384-G5B34w7DFTumWTswxYzTX7NWfbvQEg1HbFFEg6ItN03uTAAoS2qkPS/fu3LhuuSA" crossorigin="anonymous">
+    
+
+    <!-- RSS 2.0 feed -->
+    
+
+    
+
+    
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://xumjbn.github.io/">Home</a>
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title" dir="auto"><a href="https://xumjbn.github.io/" rel="home">MUXINX</a></h1>
+        <p class="lead blog-description" dir="auto">A simple blog site for technology and life.</p>
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://xumjbn.github.io/1/01/"></a></h2>
+    <p class="blog-post-meta"><time datetime="0001-01-01T00:00:00Z">Mon Jan 01, 0001</time> by muxinx in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA" rel="category tag">计算机</a>, <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93" rel="category tag">数据库</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93" rel="tag">数据库</a>, <a href="/tags/mysql" rel="tag">mysql</a>
+
+</p>
+  </header>
+  
+
+<h1 id="mysql字符切换">mysql字符切换</h1>
+
+<h2 id="背景">背景</h2>
+
+<p>mysql默认字符集为latin1，一般为了兼容中文字符集都会使用utf8，三个字节的 UTF-8 最大能编码的Unicode字符是0xffff，也就是也就是说，任何不在基本多文本平面(BMP)的Unicode字符，都无法使用Mysql的utf8字符集存储。包括Emoji表情(Emoji是一种特殊的unicode编码，常见于ios和android手机上)，和很多不常用的汉字，以及任何新增的unicode字符如果遇到4字节的宽字符就会插入异常了。更进一步，为了兼容unicode编码，用uft8mb4，5.5.3版本后才支持(查看版本 select version())。</p>
+
+<h2 id="修改整个数据库字符集">修改整个数据库字符集</h2>
+
+<p>注意：如果数据不重要的话，可以直接使用更改数据库的编码格式，再重新建表即可。</p>
+
+<pre><code>alter database test character set utf8
+</code></pre>
+
+<h2 id="修改某张表字符集">修改某张表字符集</h2>
+
+<p>可以在数据存在的情况下直接更改，但是之前显示乱码的字符还是是显示乱码，新插入数据正常</p>
+
+<pre><code>alter table students convert to character set utf8
+</code></pre>
+
+<h2 id="修改某个字段字符集">修改某个字段字符集</h2>
+
+<p>注意：第一个sanme是要给表中的sname字段修改编码格式。
+　　　第二个sname varchar(64)是要修改的字段名和字段类型（一般和原表中一样，不会做修改）
+　　　not null是修改sname不能为空的。(可以选择不加)</p>
+
+<pre><code>alter table students change sname sname varchar(64) character set utf8 not null;
+</code></pre>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxumjbn.github.io%2f1%2f01%2f" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fxumjbn.github.io%2f1%2f01%2f" title="Share on LinkedIn"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fxumjbn.github.io%2f1%2f01%2f&amp;text=" title="Tweet this"><span class="fa fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+  
+
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p dir="auto">C程序员永远不会灭亡,他们只是cast成了void.</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/2017/11/2017-11-11/">2017-11-11</a></li>
+
+<li><a href="/2017/11/2017-11-05/">2017-11-05</a></li>
+
+<li><a href="/2017/10/2017-10-30/">2017-10-30</a></li>
+
+<li><a href="/2017/01/2017-01-09/">2017-01-09</a></li>
+
+<li><a href="/2016/12/2016-12-26/">2016-12-26</a></li>
+
+<li><a href="/2016/12/2016-12-25/">2016-12-25</a></li>
+
+<li><a href="/2016/10/2016-10-05/">2016-10-05</a></li>
+
+<li><a href="/1/01/"></a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Copyright @ 2019 MUXINX All Right Reserved.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

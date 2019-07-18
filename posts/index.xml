@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ShouZhong`s Blog</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on ShouZhong`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 11 Jun 2019 16:30:37 +0800</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mysql字符集</title>
+      <link>/2019/mysql_character/</link>
+      <pubDate>Tue, 11 Jun 2019 16:30:37 +0800</pubDate>
+      
+      <guid>/2019/mysql_character/</guid>
+      <description>Mysql字符切换 背景 Mysql默认字符集为latin1，一般为了兼容中文字符集都会使用utf8，三个字节的 UTF-8 最大能编码的Unicode字符</description>
+    </item>
+    
+    <item>
+      <title>2017-11-11</title>
+      <link>/2017/2017-11-11/</link>
+      <pubDate>Sat, 11 Nov 2017 16:30:37 +0800</pubDate>
+      
+      <guid>/2017/2017-11-11/</guid>
+      <description>不知道从什么时候开始，11.11日从光棍节过成了购物节，后来又过成情人节，这个世界我早 已经看不懂。连续上了13天班后，决定还是不去公司的，毕</description>
+    </item>
+    
+    <item>
+      <title>2017-11-05</title>
+      <link>/2017/2017-11-05/</link>
+      <pubDate>Sun, 05 Nov 2017 16:30:37 +0800</pubDate>
+      
+      <guid>/2017/2017-11-05/</guid>
+      <description>11.05多云。 天依旧有些冷，早上八点就要醒了，这已经也是常态。想着可能要加班，有些无奈。早上自 己弄了早餐吃过，何还没起来，打算叫他和我一起</description>
+    </item>
+    
+    <item>
+      <title>2017-10-30</title>
+      <link>/2017/2017-10-30/</link>
+      <pubDate>Mon, 30 Oct 2017 16:30:37 +0800</pubDate>
+      
+      <guid>/2017/2017-10-30/</guid>
+      <description>10.30日，多云。 早晨起来上班，路上感觉一阵凉意。今天坐的这趟车人很多，我总是能赶在车停的一瞬间， 早早的上车坐到位置，而何总却总是跟不上，</description>
+    </item>
+    
+    <item>
+      <title>2017-01-09</title>
+      <link>/2017/2017-01-09/</link>
+      <pubDate>Mon, 09 Jan 2017 16:30:37 +0800</pubDate>
+      
+      <guid>/2017/2017-01-09/</guid>
+      <description>今天豆瓣上看到一中篇小说《爱情满屋》，一个纽约失意的计算机系统管理员和一个被家 庭工作搅得混乱不堪设计师的因为石库门一栋老房子的改造而结缘的故</description>
+    </item>
+    
+    <item>
+      <title>2016-12-26</title>
+      <link>/2016/2016-12-26/</link>
+      <pubDate>Mon, 26 Dec 2016 16:30:37 +0800</pubDate>
+      
+      <guid>/2016/2016-12-26/</guid>
+      <description>当时间按年算的时候，人生仿佛很短，而一年似乎又很长。然而2016年终于还是要过去了。 对时间的态度或许应该以分秒来记，这样才会感觉到时间的珍贵</description>
+    </item>
+    
+    <item>
+      <title>2016-12-25</title>
+      <link>/2016/2016-12-25/</link>
+      <pubDate>Sun, 25 Dec 2016 16:30:37 +0800</pubDate>
+      
+      <guid>/2016/2016-12-25/</guid>
+      <description>一个人吃饭的尴尬就在于点一个菜太单调，点两个菜嫌多。 吃面吃粉总是主粮多菜少，面食也不符合我湖南的正餐习惯，来碗全素的麻辣烫吧，吃多了 总觉得不</description>
+    </item>
+    
+    <item>
+      <title>2016-10-05</title>
+      <link>/2016/2016-10-05/</link>
+      <pubDate>Wed, 05 Oct 2016 16:30:37 +0800</pubDate>
+      
+      <guid>/2016/2016-10-05/</guid>
+      <description>平日里属最平淡无奇的日子居多，特别是上班以后，岁月不经意间便已流逝。过去的事情又 能记得多少，又还记得多少？多数时候只是过了一天罢了,好多时候</description>
+    </item>
+    
+  </channel>
+</rss>

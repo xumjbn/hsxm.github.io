@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mysql on MUXINX</title>
-    <link>https://xumjbn.github.io/tags/mysql/</link>
-    <description>Recent content in mysql on MUXINX</description>
+    <title>mysql on ShouZhong`s Blog</title>
+    <link>/tags/mysql/</link>
+    <description>Recent content in mysql on ShouZhong`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>Copyright @ 2019 MUXINX All Right Reserved.</copyright>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 11 Jun 2019 16:30:37 +0800</lastBuildDate>
     
-	<atom:link href="https://xumjbn.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>https://xumjbn.github.io/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Mysql字符集</title>
+      <link>/2019/mysql_character/</link>
+      <pubDate>Tue, 11 Jun 2019 16:30:37 +0800</pubDate>
       
-      <guid>https://xumjbn.github.io/1/01/</guid>
-      <description> mysql字符切换 背景 mysql默认字符集为latin1，一般为了兼容中文字符集都会使用utf8，三个字节的 UTF-8 最大能编码的Unicode字符是0xffff，也就是也就是说，任何不在基本多文本平面(BMP)的Unicode字符，都无法使用Mysql的utf8字符集存储。包括Emoji表情(Emoji是一种特殊的unicode编码，常见于ios和android手机上)，和很多不常用的汉字，以及任何新增的unicode字符如果遇到4字节的宽字符就会插入异常了。更进一步，为了兼容unicode编码，用uft8mb4，5.5.3版本后才支持(查看版本 select version())。
-修改整个数据库字符集 注意：如果数据不重要的话，可以直接使用更改数据库的编码格式，再重新建表即可。
-alter database test character set utf8  修改某张表字符集 可以在数据存在的情况下直接更改，但是之前显示乱码的字符还是是显示乱码，新插入数据正常
-alter table students convert to character set utf8  修改某个字段字符集 注意：第一个sanme是要给表中的sname字段修改编码格式。 第二个sname varchar(64)是要修改的字段名和字段类型（一般和原表中一样，不会做修改） not null是修改sname不能为空的。(可以选择不加)
-alter table students change sname sname varchar(64) character set utf8 not null;  </description>
+      <guid>/2019/mysql_character/</guid>
+      <description>Mysql字符切换 背景 Mysql默认字符集为latin1，一般为了兼容中文字符集都会使用utf8，三个字节的 UTF-8 最大能编码的Unicode字符</description>
     </item>
     
   </channel>

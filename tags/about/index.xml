@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on ShouZhong`s Blog</title>
+    <link>/tags/about/</link>
+    <description>Recent content in About on ShouZhong`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 18 Jul 2019 12:15:37 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 18 Jul 2019 12:15:37 +0800</pubDate>
+      
+      <guid>/about/</guid>
+      <description>关于本站 很早就想建一个站点，记录个人生活点滴，想法等，用过很多blog系统，最后都放弃之，没能坚持下来。望以后能一点一点去积累。 关于版权 本站</description>
+    </item>
+    
+  </channel>
+</rss>

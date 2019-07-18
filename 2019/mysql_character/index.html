@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="守中">
+  
+  
+  
+  <link rel="prev" href="/2017/2017-11-11/" />
+  
+  <link rel="canonical" href="/2019/mysql_character/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Mysql字符集 | ShouZhong`s Blog
+       
+  </title>
+  <meta name="title" content="Mysql字符集 | ShouZhong`s Blog">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": ""
+    },
+    "articleSection" : "posts",
+    "name" : "Mysql字符集",
+    "headline" : "Mysql字符集",
+    "description" : "Mysql字符切换 背景 Mysql默认字符集为latin1，一般为了兼容中文字符集都会使用utf8，三个字节的 UTF-8 最大能编码的Unicode字符",
+    "inLanguage" : "zh-cn",
+    "author" : "守中",
+    "creator" : "守中",
+    "publisher": "守中",
+    "accountablePerson" : "守中",
+    "copyrightHolder" : "守中",
+    "copyrightYear" : "2019",
+    "datePublished": "2019-06-11 16:30:37 \x2b0800 CST",
+    "dateModified" : "2019-06-11 16:30:37 \x2b0800 CST",
+    "url" : "\/2019\/mysql_character\/",
+    "wordCount" : "521",
+    "keywords" : [ "数据库","mysql", "ShouZhong`s Blog"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="">ShouZhong`s Blog</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="">ShouZhong`s Blog</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Mysql字符集</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="" rel="author">守中</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2019-06-11 itemprop="datePublished">June 11, 2019</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"> 计算机 </a>
+                        <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"> 数据库 </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<h1 id="mysql字符切换">Mysql字符切换</h1>
+
+<h3 id="背景">背景</h3>
+
+<p>Mysql默认字符集为latin1，一般为了兼容中文字符集都会使用utf8，三个字节的 UTF-8 最大能编码的Unicode字符是0xffff，也就是也就是说，任何不在基本多文本平面(BMP)的Unicode字符，都无法使用Mysql的utf8字符集存储。包括Emoji表情(Emoji是一种特殊的unicode编码，常见于ios和android手机上)，和很多不常用的汉字，以及任何新增的unicode字符如果遇到4字节的宽字符就会插入异常了。更进一步，为了兼容unicode编码，用uft8mb4，5.5.3版本后才支持(查看版本 select version())。</p>
+
+<h3 id="修改整个数据库字符集">修改整个数据库字符集</h3>
+
+<p>注意：如果数据不重要的话，可以直接使用更改数据库的编码格式，再重新建表即可。</p>
+
+<pre><code class="language-markdown">alter database test character set utf8
+</code></pre>
+
+<h3 id="修改某张表字符集">修改某张表字符集</h3>
+
+<p>可以在数据存在的情况下直接更改，但是之前显示乱码的字符还是是显示乱码，新插入数据正常</p>
+
+<pre><code class="language-markdown">    alter table students convert to character set utf8
+</code></pre>
+
+<h3 id="修改某个字段字符集">修改某个字段字符集</h3>
+
+<ul>
+<li>第一个sanme是要给表中的sname字段修改编码格式。</li>
+<li>第二个sname varchar(64)是要修改的字段名和字段类型（一般和原表中一样，不会做修改）</li>
+<li>not null是修改sname不能为空的。(可以选择不加)
+<br /></li>
+</ul>
+
+<pre><code class="language-markdown">    alter table students change sname sname varchar(64) character set utf8 not null;
+</code></pre>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>守中 </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=/2019/mysql_character/>/2019/mysql_character/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                    #数据库</a></span>
+            
+            <span class="tag"><a href="tags/mysql/">
+                    #mysql</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2017/2017-11-11/" class="prev" rel="prev" title="2017-11-11"><i class="iconfont icon-left"></i>&nbsp;2017-11-11</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">守中</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>

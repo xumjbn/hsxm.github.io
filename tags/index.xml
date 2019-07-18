@@ -1,50 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on MUXINX</title>
-    <link>https://xumjbn.github.io/tags/</link>
-    <description>Recent content in Tags on MUXINX</description>
+    <title>Tags on ShouZhong`s Blog</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on ShouZhong`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>Copyright @ 2019 MUXINX All Right Reserved.</copyright>
-    <lastBuildDate>Sat, 11 Nov 2017 16:30:37 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 18 Jul 2019 12:15:37 +0800</lastBuildDate>
     
-	<atom:link href="https://xumjbn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>日记</title>
-      <link>https://xumjbn.github.io/tags/%E6%97%A5%E8%AE%B0/</link>
-      <pubDate>Sat, 11 Nov 2017 16:30:37 +0800</pubDate>
-      
-      <guid>https://xumjbn.github.io/tags/%E6%97%A5%E8%AE%B0/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>随笔</title>
-      <link>https://xumjbn.github.io/tags/%E9%9A%8F%E7%AC%94/</link>
-      <pubDate>Sat, 11 Nov 2017 16:30:37 +0800</pubDate>
+      <title>About</title>
+      <link>/tags/about/</link>
+      <pubDate>Thu, 18 Jul 2019 12:15:37 +0800</pubDate>
       
-      <guid>https://xumjbn.github.io/tags/%E9%9A%8F%E7%AC%94/</guid>
+      <guid>/tags/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mysql</title>
-      <link>https://xumjbn.github.io/tags/mysql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>/tags/mysql/</link>
+      <pubDate>Tue, 11 Jun 2019 16:30:37 +0800</pubDate>
       
-      <guid>https://xumjbn.github.io/tags/mysql/</guid>
+      <guid>/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>数据库</title>
-      <link>https://xumjbn.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Tue, 11 Jun 2019 16:30:37 +0800</pubDate>
       
-      <guid>https://xumjbn.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <guid>/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>日记</title>
+      <link>/tags/%E6%97%A5%E8%AE%B0/</link>
+      <pubDate>Sat, 11 Nov 2017 16:30:37 +0800</pubDate>
+      
+      <guid>/tags/%E6%97%A5%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>随笔</title>
+      <link>/tags/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Sat, 11 Nov 2017 16:30:37 +0800</pubDate>
+      
+      <guid>/tags/%E9%9A%8F%E7%AC%94/</guid>
       <description></description>
     </item>
     

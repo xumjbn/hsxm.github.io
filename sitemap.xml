@@ -1,112 +1,262 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <url>
-    <loc>https://xumjbn.github.io/2017/11/2017-11-11/</loc>
-    <lastmod>2017-11-11T16:30:37+08:00</lastmod>
-  </url>
+    <url>
+      <loc>/tags/about/</loc>
+      
+      <lastmod>2019-07-18T12:15:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/categories/</loc>
-    <lastmod>2017-11-11T16:30:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/about/</loc>
+      
+      <lastmod>2019-07-18T12:15:37+08:00</lastmod>
+      
+      
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/</loc>
-    <lastmod>2017-11-11T16:30:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/categories/</loc>
+      
+      <lastmod>2019-07-18T12:15:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/post/</loc>
-    <lastmod>2017-11-11T16:30:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/</loc>
+      
+      <lastmod>2019-07-18T12:15:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/tags/</loc>
-    <lastmod>2017-11-11T16:30:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/tags/</loc>
+      
+      <lastmod>2019-07-18T12:15:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/tags/%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2017-11-11T16:30:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/categories/%E5%85%B3%E4%BA%8E/</loc>
+      
+      <lastmod>2019-07-18T12:15:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/categories/%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2017-11-11T16:30:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/2019/mysql_character/</loc>
+      
+      <lastmod>2019-06-11T16:30:37+08:00</lastmod>
+      
+      
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2017-11-11T16:30:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/posts/</loc>
+      
+      <lastmod>2019-06-11T16:30:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2017-11-11T16:30:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/tags/mysql/</loc>
+      
+      <lastmod>2019-06-11T16:30:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/2017/11/2017-11-05/</loc>
-    <lastmod>2017-11-05T16:30:37+08:00</lastmod>
-  </url>
+    <url>
+      <loc>/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+      
+      <lastmod>2019-06-11T16:30:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/2017/10/2017-10-30/</loc>
-    <lastmod>2017-10-30T16:30:37+08:00</lastmod>
-  </url>
+    <url>
+      <loc>/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+      
+      <lastmod>2019-06-11T16:30:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/2017/01/2017-01-09/</loc>
-    <lastmod>2017-01-09T16:30:37+08:00</lastmod>
-  </url>
+    <url>
+      <loc>/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
+      
+      <lastmod>2019-06-11T16:30:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/2016/12/2016-12-26/</loc>
-    <lastmod>2016-12-26T16:30:37+08:00</lastmod>
-  </url>
+    <url>
+      <loc>/2017/2017-11-11/</loc>
+      
+      <lastmod>2017-11-11T16:30:37+08:00</lastmod>
+      
+      
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/2016/12/2016-12-25/</loc>
-    <lastmod>2016-12-25T16:30:37+08:00</lastmod>
-  </url>
+    <url>
+      <loc>/categories/%E6%97%A5%E8%AE%B0/</loc>
+      
+      <lastmod>2017-11-11T16:30:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/2016/10/2016-10-05/</loc>
-    <lastmod>2016-10-05T16:30:37+08:00</lastmod>
-  </url>
+    <url>
+      <loc>/tags/%E6%97%A5%E8%AE%B0/</loc>
+      
+      <lastmod>2017-11-11T16:30:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/1/01/</loc>
-  </url>
+    <url>
+      <loc>/categories/%E9%9A%8F%E7%AC%94/</loc>
+      
+      <lastmod>2017-11-11T16:30:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/tags/mysql/</loc>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/tags/%E9%9A%8F%E7%AC%94/</loc>
+      
+      <lastmod>2017-11-11T16:30:37+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/2017/2017-11-05/</loc>
+      
+      <lastmod>2017-11-05T16:30:37+08:00</lastmod>
+      
+      
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/2017/2017-10-30/</loc>
+      
+      <lastmod>2017-10-30T16:30:37+08:00</lastmod>
+      
+      
+      
+      
+    </url>
   
-  <url>
-    <loc>https://xumjbn.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>/2017/2017-01-09/</loc>
+      
+      <lastmod>2017-01-09T16:30:37+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>/2016/2016-12-26/</loc>
+      
+      <lastmod>2016-12-26T16:30:37+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>/2016/2016-12-25/</loc>
+      
+      <lastmod>2016-12-25T16:30:37+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>/2016/2016-10-05/</loc>
+      
+      <lastmod>2016-10-05T16:30:37+08:00</lastmod>
+      
+      
+      
+      
+    </url>
   
 </urlset>
